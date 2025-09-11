@@ -17,3 +17,12 @@ avanca.array.forEach(button=>{
      }
     });
 });
+
+// reinicia o jogo ao clicar no botão de reinicio
+if (reiniciarBtn) {
+reiniciarBtn.addEventListener('click', () => {
+    const atual = document.querySelector('.ativo');
+    atual.classList.remove('ativo');
+    document.getElementById('passo-0').classList.add('ativo');
+    });
+}
